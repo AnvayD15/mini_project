@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -51,7 +51,6 @@ nav {
   color: #fff;
   height: 100%;
   width: 1730.2px;
-
 }
 
 .centered {
@@ -64,19 +63,15 @@ nav {
 }
 
 .overview {
-
   margin-left: 140vh;
   margin-right: 20vh;
   margin-top: -25vh;
   font-size: 25px;
   text-align: center;
-
-
 }
 
-
 .heading p {
-  font-size: 35px
+  font-size: 35px;
 }
 
 .head {
@@ -84,20 +79,17 @@ nav {
   font-size: 45px;
   margin-left: 30vh;
   text-align: left;
-
 }
 
 .vision {
   margin-top: 8%;
   font-size: x-large;
-
 }
 
 .vision p {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-
 }
 
 .container {
@@ -106,14 +98,95 @@ nav {
   justify-content: center;
   align-items: space-around;
 }
-
-
-.card {
-  box-shadow: -9px -1px 19px -1px rgba(196, 196, 196, 0.48), 3px 7px 20px rgba(20, 17, 21, 0.5);
-
+.text-head {
+  margin-top: -10px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  margin-left: 43.2%;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.text-head:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.text-head:hover:after {
+  width: 100%;
+  left: 0;
+}
+.form-group {
+  position: absolute;
+  top: -1%;
+  margin-left: -30%;
+  transform: translateY(-50%);
+  padding: 20px;
+  margin-top: 10rem;
+}
+.form-group-1 {
+  position: absolute;
+  top: 8%;
+  margin-left: -30%;
+  transform: translateY(-50%);
+  padding: 20px;
+  margin-top: 10rem;
+}
+.form-group-2 {
+  position: absolute;
+  margin-left: -30%;
+  top: 18%;
+  transform: translateY(-50%);
+  padding: 20px;
+  margin-top: 10rem;
+}
+.form-group-3 {
+  position: relative;
+  display: block;
+  margin-left: 35%;
+  margin-top: -0.2%;
+}
+.form-group-4 {
+  position: relative;
+  display: block;
+  margin-top: 5.3%;
+  margin-left: -17%;
+  width: 13.7em;
+}
+.table {
+  position: absolute;
+  top: 50%;
 }
 
+.submit-btn {
+  position: absolute;
+  margin-top: 14%;
+  border-radius: 60px;
+  background-color: #fff;
+  color: #000;
+  height: 38px;
+  border: 2px solid black;
+  width: 18.5vh;
+}
+.submit-btn:hover {
+  background-color: #227eef;
+  color: #fff;
+  transition: 0.5s ease-out;
+}
 
+.card {
+  box-shadow: -9px -1px 19px -1px rgba(196, 196, 196, 0.48),
+    3px 7px 20px rgba(20, 17, 21, 0.5);
+}
 
 .card-title {
   justify-content: center;

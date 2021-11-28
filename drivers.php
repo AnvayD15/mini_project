@@ -101,29 +101,39 @@ if($total !=0)
 
     
 ?>
-
+<a class="text-head">Add New Records</a>
 <div class="container mt-3">
-<h3>Add New Records</h3>
+
     <form action="drivers.php" method="post">
     <div class="form-group">
-        <label for="name">FName</label>
+        <label for="name">First Name</label>
         <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
     </div>
 
-	<div class="form-group">
-        <label for="email">Lname</label>
+	<div class="form-group-1">
+        <label for="email">Last name</label>
         <input type="text" name="lname" class="form-control" id="lname" aria-describedby="emailHelp"> 
        
     </div>
 
-    <div class="form-group">
-        <label for="email">Email</label>
+    <div class="form-group-2">
+        <label for="email">Email Address</label>
         <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"> 
+      
+    </div>
+    <div class="form-group-3">
+        <label for="email">Gender</label>
+        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"> 
+      
+    </div>
+    <div class="form-group-4">
+        <label for="DOB">Date Of birth</label>
+        <input type="date" name="DOB" class="form-control" id="DOB" aria-describedby="emailHelp"> 
       
     </div>
 
     
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="submit-btn">Submit</button>
     </form>
 </div>
 
