@@ -32,6 +32,8 @@ if($total !=0)
 		<th>Email</th>
 		<th>Gender</th>
 		<th>DOB</th>
+    <th>Courses</th>
+    <th>Phone Number</th>
       </tr>
     </thead>	
 	
@@ -46,7 +48,9 @@ if($total !=0)
 		      <td>".$result["lname"]."</td>
 		      <td>".$result["email"]."</td>
 			    <td>".$result["gender"]."</td>
-          <td>".$result["DOB"]."</td>
+          <td>".$result["date_of_birth"]."</td>
+          <td>".$result["course"]."</td>
+          <td>".$result["phone"]."</td>
 			  
      </tr>";
 	}
@@ -63,7 +67,10 @@ if($total !=0)
         $email = $_POST['email'];
         $desc = $_POST['lname'];
         $degc = $_POST['gender'];
-        $debc = $_POST['DOB'];
+        $debc = $_POST['date_of_birth'];
+        $cor = $_POST['course'];
+        $phno = $_POST['phone'];
+
 
         
       
@@ -78,7 +85,7 @@ if($total !=0)
       else{ 
         // Submit these to a database
         // Sql query to be executed 
-        $sql = "INSERT INTO `users` (`fname`, `lname`, `email`, `gender` , `DOB`) VALUES ('$name', '$email', '$desc' , '$degc' , '$debc')";
+        $sql = "INSERT INTO `users` (`fname`, `lname`, `email`, `gender` , `date_of_birth`,`course`,`phone`) VALUES ('$name', '$desc', '$email' , '$degc' , '$debc' ,'$cor' , '$phno')";
         $result = mysqli_query($connect, $sql);
  
         if($result){
@@ -89,15 +96,7 @@ if($total !=0)
           </button>
         </div>';
         }
-        else{
-            // echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);
-            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-          <strong>Error!</strong> We are facing some technical issue and your entry was not submitted successfully! We regret the inconvinience caused!
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>';
-        }
+        
 
       }
 
@@ -136,11 +135,18 @@ if($total !=0)
       
     </div>
     <div class="form-group-4">
-        <label for="DOB">Date Of birth</label>
-        <input type="date" name="DOB" class="form-control" id="DOB" aria-describedby="emailHelp"> 
+        <label for="date_of_birth">Date Of birth</label>
+        <input type="date" name="date_of_birth" class="form-control" id="date_of_birth" aria-describedby="emailHelp"> 
       
     </div>
-
+    <div class="form-group-5">
+      <label for="course">Courses Seletced</label>
+      <input type="course" name="course" class="form-control" id="course" aria-describedby="courseHelp"> 
+    </div>
+    <div class="form-group-6">
+      <label for="phone">Phone Number</label>
+      <input type="phone" name="phone" class="form-control" id="phone">
+    </div>
     
     <button type="submit" class="submit-btn">Submit</button>
     </form>

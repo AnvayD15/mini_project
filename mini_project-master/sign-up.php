@@ -1,5 +1,6 @@
 <?php
 include("config.php");
+include("header.php");
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -197,7 +198,7 @@ include("config.php");
 														   <label class="checkbox"><input type="checkbox" name="Terms" checked="" required><i> </i>I Accept Terms.</label>
 													 </span>
 							<ul class="payment-sendbtns">
-								<li><input type="submit" value="Submit"></li>
+								<li><input type="submit" value="Submit" action="Post"></li>
 							</ul>
 						</form>
 					</div>
