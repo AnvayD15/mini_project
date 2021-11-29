@@ -9,6 +9,7 @@
 //include('menu.php');
 include_once('header.php');
 include("connection.php");
+
 error_reporting(0);
 $query="SELECT * FROM courses";
 $data=mysqli_query($connect,$query);
@@ -28,9 +29,9 @@ if($total !=0)
     <thead>
       <tr>
         <th>School</th>
-		<th>branch</th>
+		<th>DOB</th>
 		<th>Name</th>
-		<th>Price</th>
+		<th>email</th>
 		
       </tr>
     </thead>	
@@ -43,9 +44,9 @@ if($total !=0)
 	{
        echo "<tr class='success'>
 		      <td>".$result["school"]."</td>
-		      <td>".$result["branch"]."</td>
+		      <td>".$result["date_of_birth"]."</td>
 		      <td>".$result["name"]."</td>
-			  <td>".$result["price"]."</td>
+			  <td>".$result["email"]."</td>
 			  
      </tr>";
 	}

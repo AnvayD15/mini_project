@@ -183,7 +183,9 @@ include("header.php");
 			<div id="small-dialog" class="mfp-hide">
 				<div class="pop_up">
 					<div class="payment-online-form-left">
-					<?php
+					
+						<form id="signUpForm" action="sign-up.php" method="post">
+						<?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $name = $_POST['name'];
         $email = $_POST['email'];
@@ -205,15 +207,22 @@ include("header.php");
       else{ 
         // Submit these to a database
         // Sql query to be executed 
-        $sql = "INSERT INTO `courses` (`name`, `email` , `date_of_birth`,`course`,`phone`) VALUES ('$name', '$email' , '$debc' ,'$cor' , '$phno')";
+        $sql = "INSERT INTO `courses` ( `name` , `email` , `date_of_birth` , `course` , `phone` ) VALUES ('$name', '$email' , '$debc' ,'$cor' , '$phno')";
         $result = mysqli_query($connect, $sql);
+		if($result){
+			echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+			<strong>Success!</strong> Your entry has been submitted successfully!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			  <span aria-hidden="true">×</span>
+			</button>
+		  </div>';
+		  }
       }
 
     }
 
     
 ?>
-						<form id="signUpForm" action="batches.php" method="post">
 							<input type="hidden" name="Subscribe" value="1">
 							<input type="hidden" name="Plan" value="">
 							<input type="hidden" name="Price" value="">
@@ -223,7 +232,7 @@ include("header.php");
 								<li><input class="text-box-dark email" type="text" placeholder="Email" name="Email" required></li>
 								<li><label for="date_of_birth">Date Of Birth  </label><input type="date" name="date_of_birth" placeholder="date of birth" class="form-control" id="date_of_birth" aria-describedby="emailHelp"></li>
 								<li><input class="text-box-dark" type="text" placeholder="Phone" name="Phone"></li>
-								<li><label for="courses">Courses  </label><select name="courses" id="courses" aria-describedby="genderHelp">
+								<li><label for="courses">Courses  </label><select name="course" id="course" aria-describedby="genderHelp">
 											<option value="none" selected>  </option>
 											<option value="Lessons">Lessons</option>
 											<option value="Lisence+Lessons">Lisence+Lessons</option>
@@ -233,7 +242,7 @@ include("header.php");
 							</ul>
 													
 							<ul class="payment-sendbtns">
-								<li><input type="submit" value="Submit" action="batches.php" method="post"></li>
+								<li><input type="submit" value="Submit" ></li>
 							</ul>
 						</form>
 					</div>
