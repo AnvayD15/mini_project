@@ -45,7 +45,8 @@ if($total !=0)
 		      <td>".$result["fname"]."</td>
 		      <td>".$result["lname"]."</td>
 		      <td>".$result["email"]."</td>
-			  <td>".$result["gender"]."</td>
+			    <td>".$result["gender"]."</td>
+          <td>".$result["DOB"]."</td>
 			  
      </tr>";
 	}
@@ -61,6 +62,9 @@ if($total !=0)
         $name = $_POST['name'];
         $email = $_POST['email'];
         $desc = $_POST['lname'];
+        $degc = $_POST['gender'];
+        $debc = $_POST['DOB'];
+
         
       
 		include("connection.php");
@@ -74,7 +78,7 @@ if($total !=0)
       else{ 
         // Submit these to a database
         // Sql query to be executed 
-        $sql = "INSERT INTO `users` (`fname`, `lname`, `email`) VALUES ('$name', '$email', '$desc')";
+        $sql = "INSERT INTO `users` (`fname`, `lname`, `email`, `gender` , `DOB`) VALUES ('$name', '$email', '$desc' , '$degc' , '$debc')";
         $result = mysqli_query($connect, $sql);
  
         if($result){
@@ -88,7 +92,7 @@ if($total !=0)
         else{
             // echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);
             echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-          <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
+          <strong>Error!</strong> We are facing some technical issue and your entry was not submitted successfully! We regret the inconvinience caused!
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -122,8 +126,13 @@ if($total !=0)
       
     </div>
     <div class="form-group-3">
-        <label for="email">Gender</label>
-        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"> 
+        <label for="gender"> Select you gender</label>
+<select name="gender">
+	<option value="none" selected>Gender</option>
+	<option value="male">Male</option>
+	<option value="female">Female</option>
+	<option value="other">other</option>
+</select>
       
     </div>
     <div class="form-group-4">
