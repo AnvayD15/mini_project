@@ -127,7 +127,7 @@ if($total !=0)
     </div>
     <div class="form-group-3">
         <label for="gender"> Select you gender</label>
-<select name="gender">
+<select name="gender" id="gender" aria-describedby="genderHelp">
 	<option value="none" selected>Gender</option>
 	<option value="male">Male</option>
 	<option value="female">Female</option>
