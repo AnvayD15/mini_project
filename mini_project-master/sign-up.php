@@ -183,22 +183,57 @@ include("header.php");
 			<div id="small-dialog" class="mfp-hide">
 				<div class="pop_up">
 					<div class="payment-online-form-left">
-						<form id="signUpForm" action="#" method="post">
+					<?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $debc = $_POST['date_of_birth'];
+        $cor = $_POST['course'];
+        $phno = $_POST['phone'];
+
+
+        
+      
+		include("connection.php");
+
+      // Create a connection
+     // $conn = mysqli_connect($servername, $username, $password, $database);
+      // Die if connection was not successful
+      if (!$connect){
+          die("Sorry we failed to connect: ". mysqli_connect_error());
+      }
+      else{ 
+        // Submit these to a database
+        // Sql query to be executed 
+        $sql = "INSERT INTO `courses` (`name`, `email` , `date_of_birth`,`course`,`phone`) VALUES ('$name', '$email' , '$debc' ,'$cor' , '$phno')";
+        $result = mysqli_query($connect, $sql);
+      }
+
+    }
+
+    
+?>
+						<form id="signUpForm" action="batches.php" method="post">
 							<input type="hidden" name="Subscribe" value="1">
 							<input type="hidden" name="Plan" value="">
 							<input type="hidden" name="Price" value="">
 							<h4>Sign Up</h4>
 							<ul>
-								<li><input class="text-box-dark" type="text" placeholder="Name" name="Name" required></li>
+								<li><input class="text-box-dark" type="text" placeholder="Name" name="name" required></li>
 								<li><input class="text-box-dark email" type="text" placeholder="Email" name="Email" required></li>
-								<li><input class="text-box-dark" type="password" placeholder="Password" name="Password" required></li>
+								<li><label for="date_of_birth">Date Of Birth  </label><input type="date" name="date_of_birth" placeholder="date of birth" class="form-control" id="date_of_birth" aria-describedby="emailHelp"></li>
 								<li><input class="text-box-dark" type="text" placeholder="Phone" name="Phone"></li>
+								<li><label for="courses">Courses  </label><select name="courses" id="courses" aria-describedby="genderHelp">
+											<option value="none" selected>  </option>
+											<option value="Lessons">Lessons</option>
+											<option value="Lisence+Lessons">Lisence+Lessons</option>
+											<option value="Lisence">Lisence</option>
+									</select>
+      							</li>
 							</ul>
-													<span class="checkbox1">
-														   <label class="checkbox"><input type="checkbox" name="Terms" checked="" required><i> </i>I Accept Terms.</label>
-													 </span>
+													
 							<ul class="payment-sendbtns">
-								<li><input type="submit" value="Submit" action="Post"></li>
+								<li><input type="submit" value="Submit" action="batches.php" method="post"></li>
 							</ul>
 						</form>
 					</div>

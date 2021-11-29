@@ -27,8 +27,8 @@ if($total !=0)
 	  <table class="table">
     <thead>
       <tr>
-        <th>Fname</th>
-		<th>Lname</th>
+        <th>First name</th>
+		<th>Last name</th>
 		<th>Email</th>
 		<th>Gender</th>
 		<th>DOB</th>
