@@ -11,9 +11,10 @@
           </div>
           <ul class="nav-links">
             <li><a href="index.php">Home</a></li>
-            <li><a href="batches.php">Batches</a></li>
+            <li><a href="batches.php">Enquiry</a></li>
             <li><a href="drivers.php">Customers</a></li>
             <li><a href="sign-up.php">Pricing</a></li>
+            <li><a href="Course-Instructor.php">Course Instructurs</a></li>
              </ul>
              
       </nav>

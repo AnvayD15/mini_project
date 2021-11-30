@@ -228,10 +228,11 @@ include("header.php");
 							<input type="hidden" name="Price" value="">
 							<h4>Sign Up</h4>
 							<ul>
-								<li><input class="text-box-dark" type="text" placeholder="Name" name="name" required></li>
-								<li><input class="text-box-dark email" type="text" placeholder="Email" name="Email" required></li>
-								<li><label for="date_of_birth">Date Of Birth  </label><input type="date" name="date_of_birth" placeholder="date of birth" class="form-control" id="date_of_birth" aria-describedby="emailHelp"></li>
-								<li><input class="text-box-dark" type="text" placeholder="Phone" name="Phone"></li>
+								<li><input class="text-box-dark" type="text" placeholder="Name" name="name" id="name" required></li>
+								<li><input class="text-box-dark email" type="text" placeholder="Email" name="email" id="email" required></li>
+								<li><label for="date_of_birth">Date Of Birth  </label>
+								<input type="date" name="date_of_birth" placeholder="date of birth" class="form-control" id="date_of_birth" aria-describedby="emailHelp"></li>
+								<li><input class="text-box-dark" type="text" placeholder="Phone" name="phone" id="phone"></li>
 								<li><label for="courses">Courses  </label><select name="course" id="course" aria-describedby="genderHelp">
 											<option value="none" selected>  </option>
 											<option value="Lessons">Lessons</option>
