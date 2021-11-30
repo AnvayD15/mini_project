@@ -25,7 +25,7 @@ if($total !=0)
 		
      </tr>
 	
-	  <table class="table">
+	  <table class="table1">
     <thead>
       <tr>
         <th>Instructor</th>
