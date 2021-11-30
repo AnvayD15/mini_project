@@ -162,9 +162,24 @@ nav {
   margin-left: -17%;
   width: 13.7em;
 }
+
+.form-group-5 {
+  position: relative;
+  display: block;
+  margin-top: 11.5%;
+  margin-left: -17%;
+  width: 13.7em;
+}
+.form-group-6{
+  position: relative;
+  display: block;
+  margin-top: 5.3%;
+  margin-left: 4%;
+  width: 13.7em;
+}
 .table {
   position: absolute;
-  top: 50%;
+  top: 60%;
 }
 
 .submit-btn {
@@ -263,7 +278,7 @@ a:hover {
   list-style: none;
 }
 .price-gd-top {
-  background: #227eef;
+  background: #000;
   text-align: center;
   border-radius: 5px 5px 0px 0px;
 }
@@ -271,7 +286,7 @@ a:hover {
   font-size: 1.5em;
   color: #fff;
   padding: 0.4em 1em;
-  background: #1d71d8;
+  background: #000;
   border-radius: 5px 5px 0px 0px;
 }
 /*-- w3layouts --*/
@@ -298,16 +313,16 @@ a:hover {
   background: #000;
 }
 .price-selet.pric-sclr2 a {
-  background: #000;
+  background: #227eef;
 }
 .price-gd-top.pric-clr3 {
-  background: #fc6c85;
+  background: #000;
 }
 .price-gd-top.pric-clr3 h4 {
-  background: #db6578;
+  background: #000;
 }
 .price-selet.pric-sclr3 a {
-  background: #fc6c85;
+  background: #227eef;
 }
 .price-list ul li {
   padding: 0.5em 0em;

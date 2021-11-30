@@ -111,11 +111,9 @@ include("header.php");
 								<div class="price-gd-bottom">
 									<div class="price-list">
 										<ul>
-											<li>Full access</li>
 											<li>Documentation</li>
 											<li>Customers Support</li>
-											<li>Free Updates</li>
-											<li>Unlimited Domains</li>
+											<li>Inlcuding RTO taxes</li>
 										</ul>
 									</div>
 								</div>
@@ -134,11 +132,10 @@ include("header.php");
 								<div class="price-gd-bottom">
 									<div class="price-list">
 										<ul>
-											<li>Full access</li>
+											<li>Experienced Drivers</li>
 											<li>Documentation</li>
+											<li>Inlcuding RTO taxes</li>
 											<li>Customers Support</li>
-											<li>Free Updates</li>
-											<li>Unlimited Domains</li>
 										</ul>
 									</div>
 								</div>
@@ -157,11 +154,9 @@ include("header.php");
 								<div class="price-gd-bottom">
 									<div class="price-list">
 										<ul>
-											<li>Full access</li>
-											<li>Documentation</li>
+											<li>Experienced Drivers</li>
 											<li>Customers Support</li>
-											<li>Free Updates</li>
-											<li>Unlimited Domains</li>
+											<li>Inlcuding RTO taxes</li>
 										</ul>
 									</div>
 								</div>
