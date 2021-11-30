@@ -51,7 +51,7 @@ if($total !=0)
           <td>".$result["date_of_birth"]."</td>
           <td>".$result["course"]."</td>
           <td>".$result["phone"]."</td>
-          <td><a href="delete.php?id=<?php echo $result['id']; ?>">Delete</a></td>
+          <td><a href='delete.php?id=" . $result["id"] . "'>delete</a></td>
 			  
      </tr>";
 	}
