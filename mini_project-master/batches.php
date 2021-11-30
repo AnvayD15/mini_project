@@ -11,7 +11,7 @@ include_once('header.php');
 include("connection.php");
 
 error_reporting(0);
-$query="SELECT * FROM courses";
+$query="SELECT * FROM `courses`";
 $data=mysqli_query($connect,$query);
 $total=mysqli_num_rows($data);
 
@@ -25,28 +25,31 @@ if($total !=0)
 		
      </tr>
 	
-	  <table class="table">
-    <thead>
-      <tr>
-        <th>School</th>
+	
+	 <table class="table">
+   			 <thead>
+      	<tr>
+        <th>Course</th>
 		<th>DOB</th>
 		<th>Name</th>
-		<th>email</th>
+		<th>Email</th>
+		<th>Phone Number</th>
 		
-      </tr>
-    </thead>	
+      	</tr>
+   	 	</thead>	
 	
 	
 	
-	<?php
+		<?php
 	
 	while($result=mysqli_fetch_assoc($data))
 	{
        echo "<tr class='success'>
-		      <td>".$result["school"]."</td>
+		      <td>".$result["course"]."</td>
 		      <td>".$result["date_of_birth"]."</td>
 		      <td>".$result["name"]."</td>
 			  <td>".$result["email"]."</td>
+			  <td>".$result["phone"]."</td>
 			  
      </tr>";
 	}
@@ -58,5 +61,5 @@ if($total !=0)
 
 ?>
 
-
+</table>
 

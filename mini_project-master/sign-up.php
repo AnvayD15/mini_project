@@ -179,7 +179,7 @@ include("header.php");
 				<div class="pop_up">
 					<div class="payment-online-form-left">
 					
-						<form id="signUpForm" action="sign-up.php" method="post">
+						<form id="signUpForm" action="<?php $_PHP_SELF ?>" method="post">
 						<?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $name = $_POST['name'];
