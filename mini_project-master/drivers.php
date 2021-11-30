@@ -97,6 +97,7 @@ if($total !=0)
             <span aria-hidden="true">×</span>
           </button>
         </div>';
+        header("location:drivers.php");
         }
         
 
@@ -143,7 +144,12 @@ if($total !=0)
     </div>
     <div class="form-group-5">
       <label for="course">Courses Seletced</label>
-      <input type="course" name="course" class="form-control" id="course" aria-describedby="courseHelp"> 
+      <select name="course" id="course" aria-describedby="genderHelp">
+											<option value="none" selected>  </option>
+											<option value="Lessons">Lessons</option>
+											<option value="Lisence+Lessons">Lisence+Lessons</option>
+											<option value="Lisence">Lisence</option>
+									</select> 
     </div>
     <div class="form-group-6">
       <label for="phone">Phone Number</label>
