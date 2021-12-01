@@ -147,8 +147,8 @@ if($total !=0)
       <select name="course" id="course" aria-describedby="genderHelp">
 											<option value="none" selected>  </option>
 											<option value="Lessons">Lessons</option>
-											<option value="Lisence+Lessons">Lisence+Lessons</option>
-											<option value="Lisence">Lisence</option>
+											<option value="Lisence+Lessons">Licence+Lessons</option>
+											<option value="Lisence">Licence</option>
 									</select> 
     </div>
     <div class="form-group-6">
