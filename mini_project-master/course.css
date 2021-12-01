@@ -1,46 +1,147 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
+body {
+  background-color: #dbf2ff;
+}
 nav {
-    display: flex;
-    height: 8vh;
-    background: #fff;
+  display: flex;
+  height: 8vh;
+  background: #fff;
 }
 
 .devimg {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-    margin-top: 3px;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 3px;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    width: 50%;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
 }
 
 .nav-links li a {
-    font-weight: 400;
-    color: #000;
-    text-decoration: none;
-    font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .btn {
-    margin-top: 10px;
-    border-radius: 60px;
-    background-color: #fff;
-    color: #000;
-    height: 38px;
-    margin-right: 3.5vh;
-    width: 18.5vh;
+  margin-top: 10px;
+  border-radius: 60px;
+  background-color: #fff;
+  color: #000;
+  height: 38px;
+  margin-right: 3.5vh;
+  width: 18.5vh;
+}
+.styled-table {
+  background-color: #fff;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+  background-color: #70aeff;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  font-weight: 550;
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #fff;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #fff;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #70aeff;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+.form {
+  margin-left: 13%;
+  text-align: center;
+  padding-top: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 300px;
+  height: 30px;
+  background-color: #fff;
+}
+.form-1 {
+  margin-left: 13%;
+  text-align: center;
+  padding-top: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 300px;
+  height: 30px;
+  background-color: #fff;
+}
+.form-2 {
+  margin-left: 13%;
+  text-align: center;
+  padding-top: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 300px;
+  height: 30px;
+  background-color: #fff;
+}
+.form-3 {
+  margin-left: 13%;
+  text-align: center;
+  padding-top: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 300px;
+  height: 30px;
+  background-color: #fff;
+}
+button {
+  margin-left: 30%;
+  width: 150px;
+  height: 40px;
+  background: white;
+  border-radius: 6px;
+  border: none;
+}
+
+button:hover {
+  transition: all 0.3s cubic-bezier(0.67, 0.17, 0.4, 0.83);
+}
+.contents {
+  position: relative;
+  margin-left: 32%;
+  width: 100%;
+  max-width: 400px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  background: #c1dcec;
+  box-shadow: 0 0 5px #999999;
+  padding-top: 10px;
 }

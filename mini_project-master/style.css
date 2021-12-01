@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #dbf2ff;
+}
+
 nav {
   display: flex;
   height: 8vh;
@@ -100,7 +104,7 @@ nav {
 }
 
 .text-head {
-  margin-top: -10px;
+  margin-top: 20px;
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
@@ -127,91 +131,6 @@ nav {
 .text-head:hover:after {
   width: 100%;
   left: 0;
-}
-
-.form-group {
-  position: absolute;
-  top: -1%;
-  margin-left: -30%;
-  transform: translateY(-50%);
-  padding: 20px;
-  margin-top: 10rem;
-}
-
-.form-group-1 {
-  position: absolute;
-  top: 8%;
-  margin-left: -30%;
-  transform: translateY(-50%);
-  padding: 20px;
-  margin-top: 10rem;
-}
-
-.form-group-2 {
-  position: absolute;
-  margin-left: -30%;
-  top: 18%;
-  transform: translateY(-50%);
-  padding: 20px;
-  margin-top: 10rem;
-}
-
-.form-group-3 {
-  position: relative;
-  display: block;
-  margin-left: 34%;
-  margin-top: 2%;
-}
-
-.form-group-4 {
-  position: relative;
-  display: block;
-  margin-top: 5.3%;
-  margin-left: -17%;
-  width: 13.7em;
-}
-
-.form-group-5 {
-  position: relative;
-  display: block;
-  margin-top: 11.5%;
-  margin-left: -17%;
-  width: 13.7em;
-}
-
-.form-group-6 {
-  position: relative;
-  display: block;
-  margin-top: 5.3%;
-  margin-left: 4%;
-  width: 13.7em;
-}
-
-.table {
-  position: absolute;
-  top: 60%;
-}
-
-.table-1 {
-  position: absolute;
-
-}
-
-.submit-btn {
-  position: absolute;
-  margin-top: 14%;
-  border-radius: 60px;
-  background-color: #fff;
-  color: #000;
-  height: 38px;
-  border: 2px solid black;
-  width: 18.5vh;
-}
-
-.submit-btn:hover {
-  background-color: #227eef;
-  color: #fff;
-  transition: 0.3s ease-out;
 }
 
 .card {
@@ -393,6 +312,7 @@ a:hover {
 }
 
 .price-grid {
+  margin-top: 18%;
   margin-bottom: 3em;
 }
 
@@ -446,7 +366,8 @@ a.popup-with-zoom-anim {
 
 /*-- w3layouts --*/
 /*---start-pricing-tabels-----*/
-.payment-online-form-left {}
+.payment-online-form-left {
+}
 
 form li {
   list-style: none;
@@ -551,7 +472,7 @@ span.checkbox1 {
   border: 1px solid #2d818a;
 }
 
-.checkbox input+i:after {
+.checkbox input + i:after {
   content: "";
   background: url("../images/tick.png") no-repeat 5px 5px;
   top: -1px;
@@ -563,7 +484,7 @@ span.checkbox1 {
 }
 
 /*-- agileits --*/
-.checkbox input+i:after {
+.checkbox input + i:after {
   position: absolute;
   opacity: 0;
   transition: opacity 0.1s;
@@ -578,7 +499,7 @@ span.checkbox1 {
   left: -9999px;
 }
 
-.checkbox input:checked+i:after {
+.checkbox input:checked + i:after {
   opacity: 1;
 }
 
@@ -595,7 +516,8 @@ input#datepicker {
   border-color: #fa6e6f;
 }
 
-.text-box-dark {}
+.text-box-dark {
+}
 
 .text-box-light {
   background: url(../images/calender.png) no-repeat 95% 50%;
@@ -808,7 +730,7 @@ input[type="checkbox"].css-checkbox6 {
   display: none;
 }
 
-input[type="checkbox"].css-checkbox3+label.css-label3 {
+input[type="checkbox"].css-checkbox3 + label.css-label3 {
   height: 22px;
   width: 21px;
   display: inline-block;
@@ -820,11 +742,11 @@ input[type="checkbox"].css-checkbox3+label.css-label3 {
   background-image: url(../images/filter-bg.png);
 }
 
-input[type="checkbox"].css-checkbox3:checked+label.css-label3 {
+input[type="checkbox"].css-checkbox3:checked + label.css-label3 {
   background-position: 0px 0px;
 }
 
-input[type="checkbox"].css-checkbox4+label.css-label4 {
+input[type="checkbox"].css-checkbox4 + label.css-label4 {
   height: 22px;
   width: 21px;
   display: inline-block;
@@ -836,11 +758,11 @@ input[type="checkbox"].css-checkbox4+label.css-label4 {
   background-image: url(../images/filter-bg.png);
 }
 
-input[type="checkbox"].css-checkbox4:checked+label.css-label4 {
+input[type="checkbox"].css-checkbox4:checked + label.css-label4 {
   background-position: 0px -38px;
 }
 
-input[type="checkbox"].css-checkbox5+label.css-label5 {
+input[type="checkbox"].css-checkbox5 + label.css-label5 {
   height: 22px;
   width: 21px;
   display: inline-block;
@@ -852,11 +774,11 @@ input[type="checkbox"].css-checkbox5+label.css-label5 {
   background-image: url(../images/filter-bg.png);
 }
 
-input[type="checkbox"].css-checkbox5:checked+label.css-label5 {
+input[type="checkbox"].css-checkbox5:checked + label.css-label5 {
   background-position: 0px 0px;
 }
 
-input[type="checkbox"].css-checkbox6+label.css-label6 {
+input[type="checkbox"].css-checkbox6 + label.css-label6 {
   height: 22px;
   width: 21px;
   display: inline-block;
@@ -868,7 +790,7 @@ input[type="checkbox"].css-checkbox6+label.css-label6 {
   background-image: url(../images/filter-bg.png);
 }
 
-input[type="checkbox"].css-checkbox6:checked+label.css-label6 {
+input[type="checkbox"].css-checkbox6:checked + label.css-label6 {
   background-position: 0px -38px;
 }
 
@@ -1170,7 +1092,8 @@ p.bottom {
 }
 
 /*--media quries start here--*/
-@media (max-width: 1440px) {}
+@media (max-width: 1440px) {
+}
 
 @media (max-width: 1366px) {
   .priceing-table-main {
@@ -1182,7 +1105,8 @@ p.bottom {
   }
 }
 
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+}
 
 @media (max-width: 1024px) {
   .priceing-table-main {
@@ -1194,7 +1118,8 @@ p.bottom {
   }
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+}
 
 @media (max-width: 768px) {
   .priceing-table-main {
@@ -1202,9 +1127,11 @@ p.bottom {
   }
 }
 
-@media (max-width: 736px) {}
+@media (max-width: 736px) {
+}
 
-@media (max-width: 667px) {}
+@media (max-width: 667px) {
+}
 
 @media (max-width: 640px) {
   .priceing-table-main {
@@ -1237,7 +1164,8 @@ p.bottom {
   }
 }
 
-@media (max-width: 568px) {}
+@media (max-width: 568px) {
+}
 
 @media (max-width: 480px) {
   .price-grid {
@@ -1324,3 +1252,78 @@ p.bottom {
     padding: 0.5em 0em 1.5em 0em;
   }
 }
+
+.contents {
+  position: relative;
+  margin-left: 32%;
+  width: 100%;
+  max-width: 600px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  background: #c1dcec;
+  box-shadow: 0 0 5px #999999;
+  padding-top: 10px;
+}
+.form-group {
+  margin-left: 20%;
+  align-content: center;
+  width: 22rem;
+  padding-bottom: 10px;
+}
+.form-group-1 {
+  margin-left: 20%;
+  width: 22rem;
+  padding-bottom: 10px;
+}
+.form-group-2 {
+  margin-left: 20%;
+  width: 22rem;
+  padding-bottom: 10px;
+}
+.form-group-3 {
+  margin-left: 20%;
+  width: 22rem;
+  padding-bottom: 10px;
+}
+.form-group-4 {
+  margin-left: 20%;
+  width: 22rem;
+  padding-bottom: 10px;
+}
+.form-group-5 {
+  margin-left: 20%;
+  width: 22rem;
+  padding-bottom: 10px;
+}
+.form-group-6 {
+  margin-left: 20%;
+  width: 22rem;
+  padding-bottom: 10px;
+}
+.submit-btn {
+  position: relative;
+  margin-top: 15%;
+  margin-left: 35%;
+  border-radius: 60px;
+  background-color: #fff;
+  color: #000;
+  height: 38px;
+  border: 2px solid black;
+  width: 18.5vh;
+}
+
+.submit-btn:hover {
+  background-color: #227eef;
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+.table {
+  position: absolute;
+  top: 100%;
+}
+
+.table-1 {
+  position: absolute;
+}
+

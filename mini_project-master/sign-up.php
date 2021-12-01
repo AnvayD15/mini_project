@@ -49,7 +49,6 @@ include("header.php");
 		<!--header start here-->
 		<div class="priceing-table w3l">
 			<div class="wrap">
-				<h1>Subscription Sign up Form</h1>
 				<div class="priceing-table-main">
 					<?php
 					if(isset($_POST['Subscribe']) && !empty($_POST['Name']) && !empty($_POST['Email']) && !empty($_POST['Password']) && !empty($_POST['Price']) && in_array($_POST['Plan'], array('basic', 'standart', 'premium'))) {
