@@ -25,7 +25,7 @@ if($total !=0)
 		
      </tr>
 	
-	  <table class="table">
+	  <table class="styled-table">
     <thead>
       <tr>
         <th>Instructor</th>
@@ -102,8 +102,9 @@ if($total !=0)
 
     
 ?>
+<div class="contents">
   <form action="Course-Instructor.php" method="post">
-        <div class="form-group">
+        <div class="form">
           <label for="instructor">Instructor</label>
           <select name="instructor" id="instructor">
             <option value="none">Instructor</option>
@@ -113,16 +114,16 @@ if($total !=0)
             <option value="Mayank">Mayank</option>
           </select>
         </div>
-        <div class="form-group-1">
+        <div class="form-1">
           <label for="cartype">Car Type</label>
           <select name="cartype" id="cartype">
-            <option value="none">Cart Type</option>
+            <option value="none">Car Type</option>
             <option value="Sedan">Sedan</option>
             <option value="Hatchback">Hatchback</option>
             <option value="SUV">SUV</option>
           </select>
         </div>
-        <div class="form-group-2">
+        <div class="form-2">
           <label for="batchtimings">Batch Timings</label>
           <select name="batchtimings" id="batchtimings">
             <option value="none">-------------</option>
@@ -135,7 +136,7 @@ if($total !=0)
             <option value="9pm-10pm">9pm-10pm</option>
           </select> 
         </div>
-        <div class="form-group-3">
+        <div class="form-3">
           <label for="customer">Customer</label>
           <select name="customer" id="customer">
             <option value="none">----Select----</option>
@@ -152,6 +153,4 @@ if($total !=0)
         </div>
         <button type="submit" class="submit-btn">Submit</button>
   </form>
-</div>
-
-
+  </div>

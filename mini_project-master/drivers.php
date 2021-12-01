@@ -52,7 +52,7 @@ if($total !=0)
           <td>".$result["date_of_birth"]."</td>
           <td>".$result["course"]."</td>
           <td>".$result["phone"]."</td>
-          <td><a href='delete.php?id=" . $result["id"] . "'>delete</a></td>
+          <td><a href='delete.php?id=" . $result["id"] . "' >delete</a></td>
 			  
      </tr>";
 	}
@@ -109,8 +109,7 @@ if($total !=0)
     
 ?>
 <a class="text-head">Add New Records</a>
-<div class="container mt-3">
-
+<div class="contents mt-3">
     <form action="drivers.php" method="post">
     <div class="form-group">
         <label for="name">First Name</label>
@@ -160,7 +159,6 @@ if($total !=0)
     <button type="submit" class="submit-btn">Submit</button>
     </form>
 </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
