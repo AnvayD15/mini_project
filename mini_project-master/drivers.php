@@ -10,7 +10,7 @@
 include_once('header.php');
 include("connection.php");
 error_reporting(0);
-$query="SELECT * FROM users";
+$query="SELECT * FROM customer";
 $data=mysqli_query($connect,$query);
 $total=mysqli_num_rows($data);
 
@@ -34,6 +34,7 @@ if($total !=0)
 		<th>DOB</th>
     <th>Courses</th>
     <th>Phone Number</th>
+    <th>Action</th>
       </tr>
     </thead>	
 	
@@ -87,7 +88,7 @@ if($total !=0)
       else{ 
         // Submit these to a database
         // Sql query to be executed 
-        $sql = "INSERT INTO `users` (`fname`, `lname`, `email`, `gender` , `date_of_birth`,`course`,`phone`) VALUES ('$name', '$desc', '$email' , '$degc' , '$debc' ,'$cor' , '$phno')";
+        $sql = "INSERT INTO `customer` (`fname`, `lname`, `email`, `gender` , `date_of_birth`,`course`,`phone`) VALUES ('$name', '$desc', '$email' , '$degc' , '$debc' ,'$cor' , '$phno')";
         $result = mysqli_query($connect, $sql);
  
         if($result){
@@ -129,12 +130,12 @@ if($total !=0)
     </div>
     <div class="form-group-3">
         <label for="gender"> Select you gender</label>
-<select name="gender" id="gender" aria-describedby="genderHelp">
-	<option value="none" selected>Gender</option>
-	<option value="male">Male</option>
-	<option value="female">Female</option>
-	<option value="other">other</option>
-</select>
+        <select name="gender" id="gender" aria-describedby="genderHelp">
+          <option value="none" selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">other</option>
+        </select>
       
     </div>
     <div class="form-group-4">

@@ -202,7 +202,7 @@ include("header.php");
       else{ 
         // Submit these to a database
         // Sql query to be executed 
-        $sql = "INSERT INTO `courses` ( `name` , `email` , `date_of_birth` , `course` , `phone` ) VALUES ('$name', '$email' , '$debc' ,'$cor' , '$phno')";
+        $sql = "INSERT INTO `course` ( `name` , `email` , `date_of_birth` , `course` , `phone` ) VALUES ('$name', '$email' , '$debc' ,'$cor' , '$phno')";
         $result = mysqli_query($connect, $sql);
 		if($result){
 			echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -211,6 +211,7 @@ include("header.php");
 			  <span aria-hidden="true">×</span>
 			</button>
 		  </div>';
+		 
 		  }
       }
 

@@ -11,7 +11,7 @@ include_once('header.php');
 include("connection.php");
 
 error_reporting(0);
-$query="SELECT * FROM `courses`";
+$query="SELECT * FROM `course`";
 $data=mysqli_query($connect,$query);
 $total=mysqli_num_rows($data);
 
@@ -50,7 +50,7 @@ if($total !=0)
 		      <td>".$result["name"]."</td>
 			  <td>".$result["email"]."</td>
 			  <td>".$result["phone"]."</td>
-			  <td><a href='delete.php?id=" . $result["id"] . "'>delete</a></td>
+			  
 			  
      </tr>";
 	}

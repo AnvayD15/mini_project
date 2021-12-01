@@ -4,7 +4,7 @@ include "connection.php"; // Using database connection file here
 
 $id = $_GET['id']; // get id through query string
 
-$del = mysqli_query($connect,"DELETE FROM `users` WHERE id = '$id'"); // delete query
+$del = mysqli_query($connect,"DELETE FROM `customer` WHERE id = '$id'"); // delete query
 
 if($del)
 {
